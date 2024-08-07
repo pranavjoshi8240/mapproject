@@ -59,7 +59,14 @@ MapProject is a Flutter application that allows users to interact with a map, se
     flutter pub get
     ```
 
-3. Add your Google Maps API key:
+3. Obtain your Google Maps API key from the [Google Cloud Console](https://console.cloud.google.com):
+
+    - Navigate to the Google Cloud Console.
+    - Create a new project or select an existing project.
+    - Enable the "Google Maps SDK for Android" and "Google Maps SDK for iOS" APIs.
+    - Create API credentials to get your API key.
+
+4. Add your Google Maps API key:
 
     For Android, add your API key in the `android/app/src/main/AndroidManifest.xml` file:
 
@@ -75,7 +82,7 @@ MapProject is a Flutter application that allows users to interact with a map, se
         GMSServices.provideAPIKey("your_api_key")
     ```
 
-4. Run the app:
+5. Run the app:
 
     ```bash
     flutter run
